@@ -12,9 +12,9 @@ function getHumanChoice() {
     // Ask user to input "rock", "paper", or "scissors", convert their response 
     // into lowercase, and store it in the humanChoice variable
     let humanChoice = prompt("Rock, paper, or scissors?", "").toLowerCase()
-    // If the user chooses rock, return 0
-    // If the user chooses paper, return 1
-    // If the user chooses scissors, return 2
+    // If the user chose rock, return 0
+    // If the user chose paper, return 1
+    // If the user chose scissors, return 2
     switch (humanChoice) {
         case "rock":
             return 0;
