@@ -45,4 +45,4 @@ function playRound(humanChoice, computerChoice) {
     } else {
         console.log(`It's a tie! You both chose ${humanChoice}`);
     };
-}
+};
