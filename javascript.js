@@ -56,3 +56,10 @@ function playRound() {
         computerScore++;
     }
 }
+
+// Create function named playGame
+    // Create score variables
+    // Define playRound function
+    // Call playRound 5 times
+    // If the human scored more, declare them the winner
+    // If the computer scored more, declare them the winner.
