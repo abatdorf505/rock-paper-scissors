@@ -52,7 +52,7 @@ function playRound() {
     } else {
         // Send message to console indicating player loss
         // Increment computer score value
-        console.log(`You lose! ${humanChoiceString} beats ${computerChoiceString}`)
+        console.log(`You lose! ${computerChoiceString} beats ${humanChoiceString}`)
         computerScore++;
     }
 }
