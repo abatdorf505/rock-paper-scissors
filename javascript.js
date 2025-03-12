@@ -15,5 +15,11 @@ function getComputerChoice() {
     }
 }
 
+// Create function named getHumanChoice
+    // Ask user to input "rock", "paper", or "scissors"
+    // and place input in humanChoice variable
+    // Return human choice
+
 // Call getComputerChoice function
 console.log(getComputerChoice())
+// Call getHumanChoice function
