@@ -26,14 +26,31 @@ function getHumanChoice() {
 }
 
 // Create function named playRound with parameters "humanChoice" & "computerChoice"
+function playRound() {
+    // Get string equivalent of human choice
+    humanChoiceString = (humanChoice === 0) ? "Rock" :
+    (humanChoice === 1) ? "Paper" : "Scissors";
+    // Get string equivalent of computer choice
+    computerChoiceString = (computerChoice === 0) ? "Rock": 
+    (computerChoice === 1) ? "Paper" : "Scissors";
+
     // Get difference of human and computer choice values and store in variable 
     // called result
+    let result = humanChoice - computerChoice;
     // If the difference is -2 or 1, the player wins
-    // Send message to console indiciating player success
-    // Increment player score value
-    // If the difference is 2 or -1, the computer wins
-    // Send message to console indicating player loss
-    // Increment computer score value
+    // Otherwise, the computer wins. Ties are not possible in individual rounds
+    if (result === -2 || result === 1) {
+        // Send message to console indiciating player success
+        // Increment player score value
+        console.log(`You win! ${humanChoiceString} beats ${computerChoiceString}`)
+        humanScore++;
+    } else {
+        // Send message to console indicating player loss
+        // Increment computer score value
+        console.log(`You lose! ${humanChoiceString} beats ${computerChoiceString}`)
+        computerScore++;
+    }
+}
 
 // Create variable to store the user's score and initialize it at 0
 let humanScore = 0;
