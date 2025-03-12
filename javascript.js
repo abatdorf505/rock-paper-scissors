@@ -20,7 +20,8 @@ function getHumanChoice() {
 
 function playRound(humanChoice, computerChoice) {
     // Capitalize only first letter of human choice to match computer choice
-    humanChoice = humanChoice.at(0) + humanChoice.toLowerCase().slice(1);
+    humanChoice = humanChoice.at(0).toUpperCase() + 
+    humanChoice.toLowerCase().slice(1);
 
     let winner;
     if (
