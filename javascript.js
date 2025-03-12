@@ -1,6 +1,6 @@
-// Initialize function named getComputerChoice
+// Create function named getComputerChoice
 function getComputerChoice() {
-    // Initialize variable to hold a random integer from 0 to 2, which represent
+    // Create variable to hold a random integer from 0 to 2, which represent
     // rock, paper, and scissors respectively.
     let computerChoice = Math.floor(Math.random() * 3);
     // Return computer choice
@@ -9,7 +9,7 @@ function getComputerChoice() {
 
 // Initialize function named getHumanChoice
 function getHumanChoice() {
-    // Prompt user to input "rock", "paper", or "scissors", convert their response 
+    // Ask user to input "rock", "paper", or "scissors", convert their response 
     // into lowercase, and store it in the humanChoice variable
     let humanChoice = prompt("Rock, paper, or scissors?", "").toLowerCase()
     // If the user chose rock, return 0
