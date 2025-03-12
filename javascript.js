@@ -76,8 +76,10 @@ function playGame() {
     // If the computer scored more, declare them the winner.
     if (humanScore > computerScore) {
         console.log("You win the game!");
-    } else {
+    } else if (computerScore > humanScore) {
         console.log("You lost the game, sorry!");
+    } else {
+        console.log("You both tied!")
     }
 }
 
