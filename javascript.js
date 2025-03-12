@@ -1,27 +1,28 @@
 // Create function named getComputerChoice
 function getComputerChoice() {
-    // Create variable to hold a random integer from 0 to 2
+    // Create variable to hold a random integer from 0 to 2, which represent
+    // rock, paper, and scissors respectively.
     let computerChoice = Math.floor(Math.random() * 3);
-    // If the integer is 0, return rock
-    // If the integer is 1, return paper
-    // If the integer is 2, return scissors
-    switch (computerChoice) {
-        case 0:
-            return "rock";
-        case 1:
-            return "paper";
-        case 2:
-            return "scissors";
-    }
+    // Return computer choice
+    return computerChoice
 }
 
 // Create function named getHumanChoice
 function getHumanChoice() {
-    // Ask user to input "rock", "paper", or "scissors"
-    // and place input in humanChoice variable
-    let humanChoice = prompt("Rock, paper, or scissors?", "")
-    // Return human choice
-    return humanChoice.toLowerCase()
+    // Ask user to input "rock", "paper", or "scissors", convert their response 
+    // into lowercase, and store it in the humanChoice variable
+    let humanChoice = prompt("Rock, paper, or scissors?", "").toLowerCase()
+    // If the user chooses rock, return 0
+    // If the user chooses paper, return 1
+    // If the user chooses scissors, return 2
+    switch (humanChoice) {
+        case "rock":
+            return 0;
+        case "paper":
+            return 1;
+        case "scissors":
+            return 2;
+    }
 }
 
 // Call getComputerChoice function
