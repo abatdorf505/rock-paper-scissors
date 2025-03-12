@@ -1,3 +1,8 @@
+// Create variable to store the user's score and initialize it at 0
+let humanScore = 0;
+// Create variable to store the computer's score and initialize it at 0
+let computerScore = 0;
+
 // Create function named getComputerChoice
 function getComputerChoice() {
     // Create variable to hold a random integer from 0 to 2, which represent
@@ -51,8 +56,3 @@ function playRound() {
         computerScore++;
     }
 }
-
-// Create variable to store the user's score and initialize it at 0
-let humanScore = 0;
-// Create variable to store the computer's score and initialize it at 0
-let computerScore = 0;
