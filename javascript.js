@@ -16,10 +16,15 @@ function getComputerChoice() {
 }
 
 // Create function named getHumanChoice
+function getHumanChoice() {
     // Ask user to input "rock", "paper", or "scissors"
     // and place input in humanChoice variable
+    let humanChoice = prompt("Rock, paper, or scissors?", "")
     // Return human choice
+    return humanChoice
+}
 
 // Call getComputerChoice function
 console.log(getComputerChoice())
 // Call getHumanChoice function
+console.log(getHumanChoice())
