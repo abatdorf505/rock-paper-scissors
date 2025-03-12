@@ -17,3 +17,31 @@ function getComputerChoice() {
 function getHumanChoice() {
     return prompt("Rock, paper, or scissors?", "");
 };
+
+function playRound(humanChoice, computerChoice) {
+    // Capitalize only first letter of human choice to match computer choice
+    humanChoice = humanChoice.at(0) + humanChoice.toLowerCase().slice(1);
+
+    let winner;
+    if (
+    humanChoice === "Rock" && computerChoice === "Scissors" || 
+    humanChoice === "Paper" && computerChoice === "Rock" || 
+    humanChoice === "Scissors" && computerChoice === "Paper"
+    ) {
+        winner = "human";   
+    } else if (humanChoice === computerChoice) {
+        winner = "tie";
+    } else {
+        winner = "computer";
+    };
+
+    if (winner === "human") {
+        console.log(`You win! ${humanChoice} beats ${computerChoice}`);
+        humanScore++;
+    } else if (winner === "computer") {
+        console.log(`You lose! ${computerChoice} beats ${humanChoice}`);
+        computerScore++;
+    } else {
+        console.log(`It's a tie! You both chose ${humanChoice}`);
+    };
+}
