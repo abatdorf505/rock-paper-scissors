@@ -21,7 +21,7 @@ function getHumanChoice() {
     // and place input in humanChoice variable
     let humanChoice = prompt("Rock, paper, or scissors?", "")
     // Return human choice
-    return humanChoice
+    return humanChoice.toLowerCase()
 }
 
 // Call getComputerChoice function
