@@ -51,17 +51,18 @@ function playGame() {
         // called result
         let result = humanChoice - computerChoice;
         // If the difference is -2 or 1, the player wins
-        // Otherwise, the computer wins. Ties are not possible in individual rounds
         if (result === -2 || result === 1) {
             // Send message to console indiciating player success
             // Increment player score value
             console.log(`You win! ${humanChoiceString} beats ${computerChoiceString}`);
             humanScore++;
-        } else {
+        } else if (result === 2 || result === -1) {
             // Send message to console indicating player loss
             // Increment computer score value
             console.log(`You lose! ${computerChoiceString} beats ${humanChoiceString}`);
             computerScore++;
+        } else {
+            console.log(`Tie! You both chose ${humanChoiceString}`)
         }
     }
 
