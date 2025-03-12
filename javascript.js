@@ -25,11 +25,6 @@ function getHumanChoice() {
     }
 }
 
-// Call getComputerChoice function
-console.log(getComputerChoice());
-// Call getHumanChoice function
-console.log(getHumanChoice());
-
 // Create variable to store the user's score and initialize it at 0
 let humanScore = 0;
 // Create variable to store the computer's score and initialize it at 0
