@@ -1,3 +1,6 @@
+let humanScore = 0;
+let computerScore = 0;
+
 function getComputerChoice() {
     // Pick a random integer from 0 to 2
     let computerChoice = Math.floor(Math.random() * 3);
