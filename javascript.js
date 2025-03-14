@@ -48,14 +48,6 @@ function playGame() {
         };
     };
 
-    // Play 5 rounds
-    for (let i = 0; i < 5; i++) {
-        let humanSelection = getHumanChoice();
-        let computerSelection = getComputerChoice();
-
-        playRound(humanSelection, computerSelection);
-    };
-
     if (humanScore > computerScore) {
         console.log("You win the game!");
     } else if (computerScore > humanScore) {
